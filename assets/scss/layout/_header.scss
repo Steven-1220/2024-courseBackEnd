@@ -1,0 +1,30 @@
+.aside {
+  width: 296px;
+}
+
+.navbar-nav {
+  .nav-item {
+    position: relative;
+  }
+  .nav-link {
+    color: $gray-900;
+    &.active {
+      color: $success;
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 4px;
+        background: $success;
+        top: 0;
+        bottom: 0;
+        left: -32px;
+      }
+    }
+  }
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+}

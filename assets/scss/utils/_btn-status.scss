@@ -1,0 +1,48 @@
+.btn-add {
+  &:active {
+    border: none;
+  }
+  &:focus {
+    border: none;
+  }
+  &:hover {
+    color: $success;
+  }
+}
+
+.btn-view {
+  &:active {
+    border: none;
+  }
+  &:focus {
+    border: none;
+  }
+  &:hover {
+    color: $success;
+  }
+}
+
+.btn-edit {
+  &:active {
+    border: none;
+  }
+  &:focus {
+    border: none;
+  }
+  &:hover {
+    color: $success;
+  }
+}
+
+.verification {
+  .btn {
+    color: $success;
+    &:hover {
+      background: $success;
+      color: $white;
+    }
+    &:disabled {
+      color: $gray-400;
+    }
+  }
+}

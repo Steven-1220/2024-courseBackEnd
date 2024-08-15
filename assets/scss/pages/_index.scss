@@ -1,0 +1,19 @@
+.dropdown-toggle::after {
+  content: none;
+}
+
+.brief-list {
+  width: 35%;
+  .list-group {
+    .list-group-item {
+      &.active {
+        background-color: $gray-100;
+        border-color: $gray-400;
+      }
+    }
+  }
+}
+
+.detail {
+  width: 63.5%;
+}

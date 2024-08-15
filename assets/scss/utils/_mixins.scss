@@ -1,0 +1,11 @@
+@mixin pad-lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (min-width: 767px) {
+    @content;
+  }
+}

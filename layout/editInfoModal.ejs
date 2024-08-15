@@ -1,0 +1,149 @@
+<div
+  class="modal fade"
+  id="editInfo"
+  tabindex="-1"
+  aria-labelledby="editInfo"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content rounded-top-0 rounded-bottom-0 px-8">
+      <div class="modal-header pt-8 border-bottom-0">
+        <h1 class="modal-title fs-4 fw-bold" id="editInfo">Edit Admin</h1>
+        <button
+          type="button"
+          class="btn ms-auto"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span class="material-symbols-outlined fs-4"> close </span>
+        </button>
+      </div>
+      <div class="modal-body mb-5">
+        <div class="account border-bottom pb-6">
+          <h2 class="fs-5 mb-4 fw-bold">Account</h2>
+          <div class="mb-4">
+            <label for="name" class="form-label fs-7 mb-1">Name</label>
+            <input
+              type="text"
+              class="form-control rounded-1 py-3 border-dark"
+              id="name"
+              value="Emir Wicks"
+              readonly
+            />
+          </div>
+          <div>
+            <label for="email" class="form-label fs-7 mb-1">Email</label>
+            <input
+              type="email"
+              class="form-control rounded-1 py-3 border-dark"
+              id="email"
+              value="emir.wicks@mail.com"
+              readonly
+            />
+          </div>
+        </div>
+        <div class="verification pt-6 border-bottom pb-6">
+          <h2 class="fs-5 mb-4 fw-bold">Verification</h2>
+          <div class="d-flex justify-content-between mb-4">
+            <h3 class="fs-6 fw-bold">
+              <span
+                class="material-symbols-outlined text-success align-middle fs-5 me-2"
+              >
+                check_circle
+              </span>
+              Verified
+            </h3>
+            <time class="fs-7">2020/4/12</time>
+          </div>
+          <button class="btn border fw-bold fs-6 py-4 w-100" disabled>
+            Send Verification Mail
+          </button>
+        </div>
+        <div class="access pt-6 border-bottom pb-6">
+          <h2 class="fs-5 mb-4 fw-bold mb-4">Access Level</h2>
+          <select
+            class="form-select py-3 rounded-1 border-dark"
+            aria-label="Default select example"
+          >
+            <option selected disabled>-Choose access level-</option>
+            <option value="admin">admin</option>
+            <option value="admin2">admin2</option>
+            <option value="admin3">admin3</option>
+          </select>
+        </div>
+        <div class="custom pt-6 border-bottom pb-6">
+          <h2 class="fs-5 mb-4 fw-bold">Custom Access</h2>
+          <div class="form-check mb-4">
+            <input
+              class="form-check-input border border-dark rounded-0"
+              type="checkbox"
+              value="lecture"
+              id="lecture"
+            />
+            <label class="form-check-label" for="lecture"> Lecture </label>
+          </div>
+          <div class="form-check mb-4">
+            <input
+              class="form-check-input border border-dark rounded-0"
+              type="checkbox"
+              value="coupon"
+              id="coupon"
+            />
+            <label class="form-check-label" for="coupon"> Coupon </label>
+          </div>
+          <div class="form-check mb-4">
+            <input
+              class="form-check-input border border-dark rounded-0"
+              type="checkbox"
+              value="message"
+              id="message"
+            />
+            <label class="form-check-label" for="message"> Message </label>
+          </div>
+          <div class="form-check mb-4">
+            <input
+              class="form-check-input border border-dark rounded-0"
+              type="checkbox"
+              value="setting"
+              id="setting"
+            />
+            <label class="form-check-label" for="setting"> Setting </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input border border-dark rounded-0"
+              type="checkbox"
+              value="taskmenu"
+              id="taskmenu"
+            />
+            <label class="form-check-label" for="taskmenu"> Task Menu </label>
+          </div>
+        </div>
+
+        <div class="deactivate pt-6">
+          <h2 class="fs-5 mb-4 fw-bold">Verification</h2>
+          <h3 class="fs-6 fw-bold mb-4 text-danger">
+            <span class="material-symbols-outlined align-middle fs-5 me-2">
+              warning
+            </span>
+            This cannot be undone!
+          </h3>
+          <button
+            class="btn btn-outline-danger fw-bold fs-6 py-4 w-100 rounded-1"
+          >
+            Deactivate This Account
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0">
+        <button
+          class="btn btn-outline-success py-2 px-8 rounded-1 fw-bold me-4"
+          data-bs-dismiss="modal"
+        >
+          Cancel
+        </button>
+        <button class="btn btn-success py-2 px-8 rounded-1 fw-bold">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
